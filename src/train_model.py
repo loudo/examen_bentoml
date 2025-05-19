@@ -33,7 +33,7 @@ print('rmse train :', np.sqrt(mean_squared_error(y_train, pred_train)))
 print('rmse test : ', np.sqrt(mean_squared_error(y_test, pred_test)))
 
 # Sauvegarde des modèles
-model_ref = bentoml.sklearn.save_model("accidents_lr", lr)
+model_ref = bentoml.sklearn.save_model("admission_lr", lr)
 print(f"Modèle enregistré sous : {model_ref}")
 
 

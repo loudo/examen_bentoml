@@ -3,3 +3,4 @@
 /venv
 /clean_data.csv
 /data/processed
+__pycache__
