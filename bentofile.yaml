@@ -1,0 +1,19 @@
+service: "src.service:lr_service"
+description: "Service for predicting admission"
+labels:
+  owner: "Ludovic Doucet"
+  project: "admission_prediction"
+
+include:
+  - src/
+  - data/
+
+python:
+  packages:
+    - pandas
+    - numpy 
+    - scikit-learn
+    - requests
+    - bentoml
+    - pydantic
+    - pyjwt
